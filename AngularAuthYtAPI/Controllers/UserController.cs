@@ -61,6 +61,7 @@ namespace AngularAuthYtAPI.Controllers
         [HttpPost("register")]
         public async Task<IActionResult> AddUser([FromBody] User userObj)
         {
+            
             if (userObj == null)
                 return BadRequest();
 
